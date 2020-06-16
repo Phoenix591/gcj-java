@@ -1,7 +1,8 @@
 This repository exists to provide ebuilds to compile a modern version of java starting from the old GCJ.
 Start by building sys-devel/gcc:5.5.0 with gcj enabled, temporarily set this as the system compiler.
-Install ant-core and gcj-jdk to complete the first set of java tools.
+Install ant-core and gcj-jdk from this repository to complete the first set of java tools.
 Then use eselect java-vm to set these tools as the system vm.
 Use this to emerge dev-java/icedtea:7, and set it as the system vm
 Finally we can install our first version of java 8, =dev-java/icedtea-3.0.1 (set that as the system-vm)
-Now we can finally reset our latest modern gcc as your system compiler, and build a modern  icedtea:8, at the time of this writing 3.16.0
+Now we can finally reset our latest modern gcc ( 10.1.0 as of this writing ) as your system compiler.
+Finally we can build a modern icedtea:8, at the time of this writing 3.16.0
